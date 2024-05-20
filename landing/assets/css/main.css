@@ -1,5 +1,6 @@
 @import "./base.css";
 @import "./footer.css";
+@import "./testimonial.css";
 
 .header {
   position: sticky;
@@ -7,6 +8,7 @@
   box-shadow: 0px 1.6474391222000122px 8.23719596862793px rgba(0, 0, 0, 0.1);
   background-color: white;
   padding: 20px 0;
+  z-index: 1;
 }
 
 .nav {

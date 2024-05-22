@@ -26,14 +26,7 @@
 
 .footer-left-side,
 .footer-menu {
-  width: calc((100% - var(--footer-gap)) / 2);
-}
-
-@media (max-width: 600px) {
-  .footer-left-side,
-  .footer-menu {
-    width: 100%;
-  }
+  flex-grow: 1;
 }
 
 .footer-left-side {
@@ -42,6 +35,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   gap: 30px;
+  flex-basis: 400px;
 }
 
 .footer-logo {
@@ -80,6 +74,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   gap: 16px;
+  flex-basis: 120px;
 }
 
 .footer-item a {

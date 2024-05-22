@@ -77,7 +77,7 @@
 
 .testimonial-type {
   font-size: 13px;
-  color: #969696;
+  color: var(--gray-color);
 }
 
 .testimonial-stars {

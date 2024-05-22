@@ -1,0 +1,133 @@
+.courses {
+  padding: 50px 0;
+}
+
+.courses .row {
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.courses-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.course-item-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 1250px) {
+  .course-item-row {
+    flex-direction: column;
+  }
+}
+
+.course-item {
+  flex-basis: 150px;
+  border-radius: 5px;
+  box-shadow: 0px 7.437575340270996px 7.437575340270996px rgba(0, 0, 0, 0.05);
+}
+
+.course-img-container {
+  position: relative;
+}
+
+.course-img {
+  width: 360px;
+  height: 280px;
+}
+
+.course-img-container::before {
+  content: "Best Course";
+  position: absolute;
+  background-color: var(--mainColor);
+
+  padding: 10px 7px;
+  font-size: 12px;
+  top: 25px;
+  color: white;
+  letter-spacing: 0.75px;
+  font-weight: bold;
+}
+
+.course-img-container::after {
+  content: "";
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  z-index: 1;
+}
+
+.course-price {
+  position: absolute;
+
+  bottom: 15px;
+  color: white;
+  right: 5px;
+  letter-spacing: 0.75px;
+  font-weight: bold;
+}
+
+.course-details {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-course-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.viewer-count {
+  color: var(--mainColor);
+  font-size: 12px;
+}
+
+.course-info-short {
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-info-short p {
+  color: var(--gray-color);
+  font-size: 12px;
+}
+
+.courses-more-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 30%;
+  gap: 20px;
+}
+
+.courses-more-info h1 {
+  font-size: xxx-large;
+}
+
+.courses-more-info-short-para {
+  text-transform: uppercase;
+  color: var(--mainColor);
+  font-size: 14px;
+}
+
+.courses-more-info-para {
+  color: var(--gray-color);
+}
+
+.courses-more-info a {
+  color: white;
+  font-weight: 500;
+  background-color: var(--mainColor);
+  text-align: center;
+  padding: 10px 40px;
+  border-radius: 10px;
+  width: fit-content;
+}

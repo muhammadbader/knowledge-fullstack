@@ -11,6 +11,7 @@
   --mainFont: "Poppins", sans-serif;
   --subFont: "Inter", sans-serif;
   --mainColor: #545be8;
+  --gray-color: #969696;
 }
 
 body {

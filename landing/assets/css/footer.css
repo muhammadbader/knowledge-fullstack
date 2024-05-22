@@ -29,6 +29,13 @@
   width: calc((100% - var(--footer-gap)) / 2);
 }
 
+@media (max-width: 600px) {
+  .footer-left-side,
+  .footer-menu {
+    width: 100%;
+  }
+}
+
 .footer-left-side {
   padding: 10px 0;
   display: flex;

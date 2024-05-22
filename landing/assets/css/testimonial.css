@@ -27,11 +27,23 @@
   gap: var(--testimonial-gap-client);
   position: relative;
   align-items: flex-start;
-
-  width: calc((100% - var(--testimonial-gap)) / 2);
   padding: 20px;
   box-shadow: 0px 8.23719596862793px 8.23719596862793px rgba(0, 0, 0, 0.1);
+
+  /* width: calc((100% - var(--testimonial-gap)) / 2); */
+  /* replace media query */
+  /* it depends on the direction of the paretn, in case it is flex-row, them 
+  the width is 400 and if the parent is flex-column then the height is 400 */
+  flex-basis: 400px;
+  flex-grow: 1;
 }
+
+/* @media (max-width: 600px) {
+  .testimonial-content {
+    width: 100%;
+    gap: 0;
+  }
+} */
 
 .testimonial-content:after {
   content: "";

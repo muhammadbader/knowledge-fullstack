@@ -1,7 +1,10 @@
 @import "./base.css";
-@import "./footer.css";
+@import "./intro.css";
+@import "./details.css";
 @import "./courses.css";
+@import "./selected_course.css";
 @import "./testimonial.css";
+@import "./footer.css";
 
 .header {
   position: sticky;

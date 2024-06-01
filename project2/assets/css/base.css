@@ -15,6 +15,7 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -23,13 +24,13 @@ a {
 }
 
 .container {
-  width: calc(100% - 200px);
+  width: calc(100% - 300px);
   margin: auto;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 750px) {
   .container {
-    width: calc(100% - 40px);
+    width: calc(100% - 50px);
     margin: auto;
   }
 }

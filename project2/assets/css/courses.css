@@ -2,16 +2,15 @@
   margin-bottom: 110px;
 }
 
-.courses h1 {
-  font-size: 50px;
-  margin: 0;
+.courses .cards {
+  justify-content: space-between;
 }
 
 .course-card {
-  width: calc((100% - 300px) / 2);
+  width: calc((100% - 250px) / 2);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 930px) {
   .course-card {
     width: 100%;
   }

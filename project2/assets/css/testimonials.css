@@ -2,11 +2,6 @@
   margin-bottom: 170px;
 }
 
-.testimonials h1 {
-  font-size: 50px;
-  margin: 0;
-}
-
 .testimonials .card {
   width: calc((100% - 30px) / 2);
   padding: 0;

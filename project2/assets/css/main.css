@@ -7,9 +7,11 @@
 @import "./benefits.css";
 @import "./courses.css";
 @import "./testimonials.css";
+@import "./pricing.css";
+@import "./footer.css";
 
 .mini-paragraph-title {
-  max-width: 90%;
+  max-width: 75%;
 }
 
 .cards {
@@ -23,4 +25,19 @@
   background-color: white;
   border-radius: var(--border-radius);
   padding: 50px;
+}
+
+.section-title {
+  font-size: 50px;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .section-title {
+    font-size: 5vw;
+  }
+
+  .mini-paragraph-title {
+    font-size: 2vw;
+  }
 }

@@ -38,6 +38,12 @@
   }
 }
 
+@media (max-width: 500px) {
+  .benefits-card {
+    flex-basis: 100%;
+  }
+}
+
 .benefit-card-no {
   position: absolute;
   top: 50px;

@@ -1,0 +1,77 @@
+.intro {
+  margin-top: 150px;
+}
+
+.intro .container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+.intro .title {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: 14px 30px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 36px;
+  width: fit-content;
+
+  position: relative;
+}
+
+.intro h1 {
+  margin: 0;
+  padding: 14px 20px;
+}
+
+.intro h3 {
+  font-size: 30px;
+}
+
+.logo-title {
+  width: 90px;
+  height: 90px;
+}
+
+.intro span {
+  color: var(--orange-main-color);
+}
+
+.three-lines {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  left: -50px;
+  top: -50px;
+}
+
+.intro-paragraph {
+  font-size: 20px;
+  margin: 0;
+}
+
+.more-info {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.more-info a {
+  border-radius: 12px;
+  background-color: white;
+  padding: 18px 24px;
+}
+
+.more-info a:first-child {
+  color: white;
+  background-color: var(--orange-main-color);
+}

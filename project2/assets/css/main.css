@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "./base.css";
+@import "./header.css";
+@import "./intro.css";
+@import "./customers.css";
+@import "./video_covert.css";
+@import "./benefits.css";
+@import "./courses.css";
+@import "./testimonials.css";
+
+.mini-paragraph-title {
+  max-width: 90%;
+}
+
+.cards {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: 50px;
+}

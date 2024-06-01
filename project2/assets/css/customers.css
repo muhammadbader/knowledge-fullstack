@@ -1,0 +1,18 @@
+.customers .container .row {
+  background-color: #fcfcfc;
+  border-radius: var(--border-radius);
+  padding: 30px;
+}
+
+.customers .container .row img {
+  border-left: 1px solid #f1f1f3;
+  padding: 30px 40px;
+}
+
+.customers .container .row img:first-child {
+  border: none;
+}
+
+.customers {
+  margin-bottom: 100px;
+}

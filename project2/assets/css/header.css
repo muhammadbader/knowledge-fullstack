@@ -5,6 +5,10 @@
 .header {
   margin: 20px 0;
   box-shadow: 0px 7px 8.23719596862793px 0px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--gray-background-color-nav);
 }
 
 .header .row {
@@ -25,7 +29,7 @@
   top: 0;
 }
 
-.nav .active {
+.nav a.active {
   background-color: var(--gray-color);
 }
 

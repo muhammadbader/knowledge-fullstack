@@ -10,6 +10,8 @@
 @import "./pricing.css";
 @import "./footer.css";
 
+/* for naimation use transition */
+
 .mini-paragraph-title {
   max-width: 75%;
 }

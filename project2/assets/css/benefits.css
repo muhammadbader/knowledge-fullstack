@@ -22,6 +22,7 @@
   position: relative;
   background-color: white;
   width: calc((100% - 40px) / 3);
+  aspect-ratio: 1 / 1;
   border-radius: var(--border-radius);
   display: flex;
   flex-wrap: wrap;
@@ -32,13 +33,13 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .benefits-card {
-    flex-basis: calc((100% - 40px) / 2);
+    flex-basis: calc((100% - 20px) / 2);
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .benefits-card {
     flex-basis: 100%;
   }

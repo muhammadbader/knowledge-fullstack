@@ -1,8 +1,8 @@
 result = document.querySelector(".result");
 currencies = {
-  NIS: 4.02,
-  Dollar: 1.07,
-  Dinar: 0.76,
+  NIS: 1,
+  Dollar: 3.5,
+  Dinar: 5,
 };
 
 document.querySelector(".exchangeForm").onsubmit = (event) => {

@@ -1,0 +1,44 @@
+.container {
+  padding: 0 10%;
+  margin: auto;
+}
+
+.navbar h1 {
+  text-align: center;
+}
+
+.pizza-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pizza-item {
+  width: 30%;
+  background-color: gray;
+}
+
+@media (max-width: 768px) {
+  .pizza-item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 425px) {
+  .pizza-item {
+    width: 100%;
+  }
+}
+
+.pizza-item {
+  text-align: center;
+}
+
+.pizza-title h4 {
+  text-align: center;
+}
+
+.pizza-item img {
+  width: 80%;
+  aspect-ratio: 1 / 1;
+}

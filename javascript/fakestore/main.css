@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 30px;
+  justify-content: center;
+}
+
+.product {
+  width: 30%;
+  transition: transform 0.5s;
+  background-color: white;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}

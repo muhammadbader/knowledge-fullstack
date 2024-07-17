@@ -1,5 +1,5 @@
 const getProdcuts = async () => {
-  const { data } = await axios.get("https://fakestoreapi.com/aproducts");
+  const { data } = await axios.get("https://fakestoreapi.com/products");
   return data;
 };
 
@@ -14,6 +14,7 @@ const displayProducts = async () => {
     <h2>${prod.title}</h2>
     <img src="${prod.image}" alt="${prod.title}" />
     </a>
+    <button onclick="deleteProduct(${prod.id})"><h2>Delete</h2></button>
     </div>`
       )
       .join("");
@@ -27,5 +28,18 @@ const displayProducts = async () => {
     document.querySelector(".overlay").style.display = "none";
   }
 };
+
+const deleteProduct = async (id) => {
+  try {
+    const { data } = await axios.delete(
+      `https://fakestoreapi.com/products/${id}`
+    );
+    console.log(data);
+  } catch (error) {
+    alert(error);
+  }
+};
+
+const addProduct = async () => {};
 
 displayProducts();

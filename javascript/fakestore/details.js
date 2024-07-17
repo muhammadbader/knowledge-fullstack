@@ -17,6 +17,8 @@ const displayProduct = async () => {
   <img src="${product.image}" alt="${product.name}">
   </div>`;
   document.querySelector(".product-details").innerHTML = data;
+
+  document.querySelector(".overlay").classList.add("display-none");
 };
 
 displayProduct();

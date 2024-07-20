@@ -9,7 +9,7 @@ productForm.onsubmit = async function (event) {
   const description = element["description"].value;
   const category = element["category"].value;
 
-  const { data } = await axios.post("https://fakestoreapi.com/products", {
+  const { data } = await axios.post("https://dummyjson.com/products/add", {
     title: title,
     price: price,
     description: description,

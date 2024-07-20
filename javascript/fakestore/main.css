@@ -64,3 +64,29 @@ body {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f7fbc5;
+  padding: 20px;
+  margin-bottom: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  transition: 0.6s;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.productsNavBar {
+  background-color: orangered;
+}
+
+.about {
+  text-align: center;
+  padding: 50px 0;
+}

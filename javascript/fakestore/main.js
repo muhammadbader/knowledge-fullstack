@@ -43,3 +43,13 @@ const deleteProduct = async (id) => {
 const addProduct = async () => {};
 
 displayProducts();
+
+window.onscroll = () => {
+  const navbar = document.querySelector("nav");
+  const products = document.querySelector(".products-section");
+  if (window.scrollY > products.offsetTop) {
+    navbar.classList.add("productsNavBar");
+  } else {
+    navbar.classList.remove("productsNavBar");
+  }
+};

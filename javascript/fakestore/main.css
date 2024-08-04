@@ -149,3 +149,63 @@ nav a {
   cursor: not-allowed;
   background-color: gray;
 }
+
+.my-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.my-modal .img {
+  text-align: center;
+  background-color: white;
+  /* width: 50%; */
+  height: 70%;
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  top: 10%;
+}
+
+.my-modal .img img {
+  border-radius: 10px;
+  height: 100%;
+}
+
+.closeBtn,
+.leftBtn,
+.rightBtn {
+  position: absolute;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 30px;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+.closeBtn {
+  top: 10px;
+  right: 10px;
+}
+
+.leftBtn {
+  top: 50%;
+  left: 10px;
+}
+
+.rightBtn {
+  top: 50%;
+  right: 10px;
+}
+
+.d-none {
+  display: none !important;
+}

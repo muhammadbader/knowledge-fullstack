@@ -65,7 +65,7 @@ const displayProducts = async (page = 0) => {
       .map(
         (prod) => `
     <div class="product">
-      <a href='./details.html?id=${prod.id}'>
+      <!-- <a href='./details.html?id=${prod.id}'> -->
       <h2>${prod.title}</h2>
       <img src="${prod.thumbnail}" alt="${prod.title}" />
       </a>
@@ -76,6 +76,41 @@ const displayProducts = async (page = 0) => {
 
     document.querySelector(".products").innerHTML = result;
     document.querySelector(".overlay").classList.add("display-none");
+
+    const modal = document.querySelector(".my-modal");
+    const closeBtn = document.querySelector(".closeBtn");
+    const leftBtn = document.querySelector(".leftBtn");
+    const rightBtn = document.querySelector(".rightBtn");
+    const images = Array.from(document.querySelectorAll("img"));
+
+    let currentIndex = -1;
+    for (let i = 0; i < images.length; i++) {
+      images[i].addEventListener("click", (event) => {
+        modal.classList.remove("d-none");
+        modal.querySelector("img").setAttribute("src", event.target.src);
+        currentIndex = images.indexOf(event.target);
+      });
+    }
+
+    closeBtn.addEventListener("click", () => {
+      modal.classList.add("d-none");
+    });
+
+    rightBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      modal.querySelector("img").setAttribute("src", images[currentIndex].src);
+    });
+
+    leftBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1) % images.length;
+      modal.querySelector("img").setAttribute("src", images[currentIndex].src);
+    });
+
+    modal.addEventListener("click", (event) => {
+      if (event.target == modal) {
+        modal.classList.add("d-none");
+      }
+    });
   } catch (error) {
     const result = `<h2>Error request<br />
     ${error["message"]}</h2>`;

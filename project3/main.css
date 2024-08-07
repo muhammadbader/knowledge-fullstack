@@ -14,6 +14,30 @@
   margin: auto;
 }
 
+.d-none {
+  display: none;
+}
+
+.preview-deal,
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  gap: 20px;
+}
+
+.overlay div {
+  width: 20rem;
+  height: 20rem;
+}
+
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -128,15 +152,22 @@
   width: 40%;
 }
 
-.slider {
+.deals .slider {
   display: flex;
   gap: 30px;
   justify-content: space-evenly;
   text-align: center;
 }
 
-.slider div {
-  width: 20%;
+.deals .card {
+  width: 25rem;
+  transition: transform 0.5s;
+}
+
+.deals .card:hover {
+  transform: scale(1.05);
+  border: 2px solid var(--mainColor);
+  cursor: pointer;
 }
 
 .slider div img {
@@ -212,12 +243,14 @@
   padding-bottom: 12px;
 }
 
-.content button {
+.ad-section .content button {
   margin-top: 22px;
   padding: 15px 45px;
   border: 2px solid var(--mainColor);
   font-weight: bold;
   width: 50%;
+  font-size: large;
+  text-transform: uppercase;
 }
 
 .images {
@@ -288,64 +321,35 @@
   margin-bottom: 150px;
 }
 
+.reviews .card-body {
+  padding: 75px;
+}
 .reviews {
   display: flex;
   gap: 100px;
 }
 
-.review-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 45%;
-}
-
-.review-text h2,
-.review-text h1 {
-  text-transform: uppercase;
-  font-weight: normal;
-}
-
-.review-text h1 {
+.review-title {
   color: var(--mainColor);
   margin-top: 50px;
   margin-bottom: 25px;
   font-size: 60px;
+  text-transform: uppercase;
 }
 
 .stars {
   margin-bottom: 25px;
 }
 
-.review {
-  font-size: 45px;
-  margin-bottom: 20px;
-}
-
-.writer {
+.reviews .writer {
   margin-bottom: 25px;
   color: var(--mainColor);
   font-size: 24px;
 }
 
-.dir-review {
-  width: 20%;
+.reviews .review-body {
   display: flex;
-  gap: 20px;
-}
-
-.dir-review svg {
-  padding: 10px;
-  border: 2px solid var(--mainColor);
-}
-
-.reviewer {
-  width: 45%;
-  height: auto;
-}
-
-.reviewer img {
-  width: 100%;
+  align-items: center;
 }
 
 .hashtag {
@@ -394,6 +398,7 @@
 
 .footer h1 {
   color: var(--mainColor);
+  font-size: 80px;
 }
 
 .footer .socials {

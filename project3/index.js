@@ -1,5 +1,3 @@
-// todo: in reviews section inside deals section, image is not matched
-// todo: in reviews section slider for reviews
 const deal_products = {
   "imgs/slider/sl (1).png": "multi-vitamin eveday wellness",
   "imgs/slider/sl (6).png": "FULL RANGE VALUE PACK (SAVE 33%)",
@@ -127,5 +125,18 @@ const previewDeal = async () => {
     }
   });
 };
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    items: 4, // Number of items to display
+    margin: 10, // Margin between items
+    navigation: true,
+    responsiveClass: true,
+    responsive: {
+      0: { items: 1 }, // Items for screen width 0px and up
+      768: { items: 2 }, // Items for screen width 600px and up
+    },
+  });
+});
 
 previewDeal();

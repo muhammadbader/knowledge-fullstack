@@ -20,6 +20,16 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
       rel="stylesheet"
     /> -->
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+    />
+    <!-- Owl Carousel Theme CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.default.min.css"
+    />
 
     <link rel="stylesheet" href="main.css" />
 
@@ -64,7 +74,7 @@
           Find your perfect match for your skin type, skin care routine, and
           personal style.
         </p>
-        <button class="header-button">shop now</button>
+        <button class="btn btn header-button">shop now</button>
       </div>
     </header>
     <div class="container">
@@ -142,8 +152,8 @@
       </section>
       <section class="products">
         <h1>our products are</h1>
-        <div class="products-slider">
-          <div class="product-item">
+        <div class="owl-carousel">
+          <div class="owl-item product-item">
             <img src="imgs/ad (1).png" />
             <h3>MULTI-VITAMIN (3 MONTH SUPPLY)</h3>
             <div class="prices">
@@ -151,7 +161,7 @@
               ><span class="old-price">$199.9 USD</span>
             </div>
           </div>
-          <div class="product-item">
+          <div class="owl-item product-item">
             <img src="imgs/ad (1).png" />
             <h3>MULTI-VITAMIN (3 MONTH SUPPLY)</h3>
             <div class="prices">
@@ -159,7 +169,7 @@
               ><span class="old-price">$199.9 USD</span>
             </div>
           </div>
-          <div class="product-item">
+          <div class="owl-item product-item">
             <img src="imgs/ad (1).png" />
             <h3>MULTI-VITAMIN (3 MONTH SUPPLY)</h3>
             <div class="prices">
@@ -167,7 +177,71 @@
               ><span class="old-price">$199.9 USD</span>
             </div>
           </div>
-          <div class="product-item">
+          <div class="owl-item product-item">
+            <img src="imgs/ad (1).png" />
+            <h3>MULTI-VITAMIN (3 MONTH SUPPLY)</h3>
+            <div class="prices">
+              <span class="sale-price">$39.99 USD</span
+              ><span class="old-price">$199.9 USD</span>
+            </div>
+          </div>
+          <div class="owl-item product-item">
+            <img src="imgs/ad (1).png" />
+            <h3>MULTI-VITAMIN (3 MONTH SUPPLY)</h3>
+            <div class="prices">
+              <span class="sale-price">$39.99 USD</span
+              ><span class="old-price">$199.9 USD</span>
+            </div>
+          </div>
+          <div class="owl-item product-item">
+            <img src="imgs/ad (1).png" />
+            <h3>MULTI-VITAMIN (3 MONTH SUPPLY)</h3>
+            <div class="prices">
+              <span class="sale-price">$39.99 USD</span
+              ><span class="old-price">$199.9 USD</span>
+            </div>
+          </div>
+          <div class="owl-item product-item">
+            <img src="imgs/ad (1).png" />
+            <h3>MULTI-VITAMIN (3 MONTH SUPPLY)</h3>
+            <div class="prices">
+              <span class="sale-price">$39.99 USD</span
+              ><span class="old-price">$199.9 USD</span>
+            </div>
+          </div>
+          <div class="owl-item product-item">
+            <img src="imgs/ad (1).png" />
+            <h3>MULTI-VITAMIN (3 MONTH SUPPLY)</h3>
+            <div class="prices">
+              <span class="sale-price">$39.99 USD</span
+              ><span class="old-price">$199.9 USD</span>
+            </div>
+          </div>
+          <div class="owl-item product-item">
+            <img src="imgs/ad (1).png" />
+            <h3>MULTI-VITAMIN (3 MONTH SUPPLY)</h3>
+            <div class="prices">
+              <span class="sale-price">$39.99 USD</span
+              ><span class="old-price">$199.9 USD</span>
+            </div>
+          </div>
+          <div class="owl-item product-item">
+            <img src="imgs/ad (1).png" />
+            <h3>MULTI-VITAMIN (3 MONTH SUPPLY)</h3>
+            <div class="prices">
+              <span class="sale-price">$39.99 USD</span
+              ><span class="old-price">$199.9 USD</span>
+            </div>
+          </div>
+          <div class="owl-item product-item">
+            <img src="imgs/ad (1).png" />
+            <h3>MULTI-VITAMIN (3 MONTH SUPPLY)</h3>
+            <div class="prices">
+              <span class="sale-price">$39.99 USD</span
+              ><span class="old-price">$199.9 USD</span>
+            </div>
+          </div>
+          <div class="owl-item product-item">
             <img src="imgs/ad (1).png" />
             <h3>MULTI-VITAMIN (3 MONTH SUPPLY)</h3>
             <div class="prices">
@@ -183,39 +257,186 @@
       <img src="imgs/slidershow2.png" />
       <div class="container">
         <div class="reviews">
-          <div class="card mb-3 border-warning">
-            <div class="row g-0">
-              <div class="col-lg-4 review-body">
-                <div class="card-body">
-                  <h1 class="card-title review-title">real results</h1>
-                  <div class="stars">
-                    <img src="imgs/staron.png" />
-                    <img src="imgs/staron.png" />
-                    <img src="imgs/staron.png" />
-                    <img src="imgs/staron.png" />
-                    <img src="imgs/staroff.png" />
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card mb-3 border-warning">
+                  <div class="row">
+                    <div class="col-lg-6 review-body">
+                      <div class="card-body">
+                        <h1 class="card-title review-title">real results</h1>
+                        <div class="stars">
+                          <img src="imgs/staron.png" />
+                          <img src="imgs/staron.png" />
+                          <img src="imgs/staron.png" />
+                          <img src="imgs/staron.png" />
+                          <img src="imgs/staroff.png" />
+                        </div>
+                        <p class="card-text">
+                          “We have perfected our formulas over time, based on
+                          your feedback. Check out hundreds of reviews on our
+                          website.We can't wait until you are a part of our
+                          Good4Me Family.”
+                        </p>
+                        <h4 class="writer">_Chloe H.</h4>
+                        <p class="card-text">
+                          <small class="text-body-secondary"
+                            >Last updated 3 days ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <img
+                        src="imgs/normal-skin.png"
+                        class="img-fluid rounded-end"
+                        alt="reviewer"
+                      />
+                    </div>
                   </div>
-                  <p class="card-text">
-                    “We have perfected our formulas over time, based on your
-                    feedback. Check out hundreds of reviews on our website.We
-                    can't wait until you are a part of our Good4Me Family.”
-                  </p>
-                  <h4 class="writer">_Chloe H.</h4>
-                  <p class="card-text">
-                    <small class="text-body-secondary"
-                      >Last updated 3 days ago</small
-                    >
-                  </p>
                 </div>
               </div>
-              <div class="col-lg-8">
-                <img
-                  src="imgs/normal-skin.png"
-                  class="img-overlay rounded-end"
-                  alt="reviewer"
-                />
+              <div class="carousel-item">
+                <div class="card mb-3 border-warning">
+                  <div class="row">
+                    <div class="col-lg-6 review-body">
+                      <div class="card-body">
+                        <h1 class="card-title review-title">real results</h1>
+                        <div class="stars">
+                          <img src="imgs/staron.png" />
+                          <img src="imgs/staron.png" />
+                          <img src="imgs/staron.png" />
+                          <img src="imgs/staroff.png" />
+                          <img src="imgs/staroff.png" />
+                        </div>
+                        <p class="card-text">
+                          “Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Fugit, facilis..”
+                        </p>
+                        <h4 class="writer">_Regule N.</h4>
+                        <p class="card-text">
+                          <small class="text-body-secondary"
+                            >Last updated 10 days ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <img
+                        src="imgs/dry-skin.png"
+                        class="img-fluid rounded-end"
+                        alt="reviewer"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card mb-3 border-warning">
+                  <div class="row">
+                    <div class="col-lg-6 review-body">
+                      <div class="card-body">
+                        <h1 class="card-title review-title">real results</h1>
+                        <div class="stars">
+                          <img src="imgs/staron.png" />
+                          <img src="imgs/staron.png" />
+                          <img src="imgs/staron.png" />
+                          <img src="imgs/staron.png" />
+                          <img src="imgs/staron.png" />
+                        </div>
+                        <p class="card-text">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Reprehenderit similique dolores voluptates, est
+                          eaque temporibus nesciunt numquam eius. Officia,
+                          dolore!
+                        </p>
+                        <h4 class="writer">_Oily M.</h4>
+                        <p class="card-text">
+                          <small class="text-body-secondary"
+                            >Last updated 2 days ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <img
+                        src="imgs/oily-skin.png"
+                        class="img-fluid rounded-end"
+                        alt="reviewer"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+            <button
+              class="carousel-control-prev custom-controller"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span aria-hidden="true">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="45"
+                  height="45"
+                  fill="var(--mainColor)"
+                  class="bi bi-arrow-left-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"
+                  /></svg
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next custom-controller"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span aria-hidden="true"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="45"
+                  height="45"
+                  fill="black"
+                  class="bi bi-arrow-right-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                  /></svg
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
@@ -280,6 +501,10 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
     <script src="index.js"></script>
   </body>

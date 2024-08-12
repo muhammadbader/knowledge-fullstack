@@ -203,10 +203,6 @@
   flex-direction: column;
   justify-content: center;
 }
-.content h1 {
-  font-size: 60px;
-  margin-bottom: 17px;
-}
 
 .content p {
   font-size: 18px;
@@ -298,7 +294,8 @@
 }
 
 .reviews .card-body {
-  padding: 75px;
+  padding: 36px;
+  margin-bottom: 20px;
 }
 
 .reviews .card {
@@ -316,7 +313,6 @@
 
 .review-title {
   color: var(--mainColor);
-  margin-top: 50px;
   margin-bottom: 25px;
   font-size: 60px;
   text-transform: uppercase;
@@ -385,9 +381,9 @@
   gap: 20px;
 }
 
-.footer .logo {
+/* .footer .logo {
   width: 100%;
-}
+} */
 
 .real-results .upper-img {
   width: 100%;
@@ -412,6 +408,9 @@
 }
 
 .carousel-btns {
+  position: relative;
+}
+.carousel-btns-out {
   position: absolute;
   height: 45px;
   width: 150px;
@@ -422,6 +421,7 @@
 .custom-controller {
   height: max-content;
   width: max-content;
+  top: 20px;
 }
 
 .owl-buttons {
@@ -434,10 +434,12 @@
   border: 2px solid var(--mainColor);
   padding: 5px 10px;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 .owl-buttons div:hover {
   background: var(--mainColor);
+  color: white;
 }
 
 .btn-outline-mainColor {

@@ -18,7 +18,8 @@ const start = function () {
 
   const deals_slider = document.querySelector(".deals .slider");
   for (let img in deal_products) {
-    deals_slider.innerHTML += `<div class="card">
+    deals_slider.innerHTML += `<div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="card">
             <img
               src="${img}"
               class="card-img-top"
@@ -30,7 +31,8 @@ const start = function () {
             <div class="card-body">
               <p>${deal_products[img]}</p>
             </div>
-          </div>`;
+            </div>
+    </div>`;
   }
 
   const carousel = document.querySelector("#carouselExampleAutoplaying");

@@ -48,37 +48,78 @@
         <span class="visually-hidden">Loading...</span>
       </div>
     </div>
-    <nav class="navbar">
-      <img src="imgs/organic beauty post.png" />
-      <ul class="main-menu">
-        <li><a class="nav-link" href="#">Home</a></li>
-        <li><a class="nav-link" href="#">Shop</a></li>
-        <li><a class="nav-link" href="#">faq's</a></li>
-        <li><a class="nav-link" href="#">stockist</a></li>
-        <li><a class="nav-link" href="#">contact</a></li>
-      </ul>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path
-          d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-        />
-      </svg>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-md">
+        <img src="imgs/organic beauty post.png" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+            <li class="nav-item">
+              <a
+                class="nav-link text-uppercase active"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">faq's</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">stockist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="#">contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-mainColor" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
     </nav>
-    <header class="header">
-      <img class="header-img" src="imgs/header.png" />
+
+    <header class="header vh-100">
       <img class="header-slider" src="imgs/slidershow.png" />
-      <div class="header-content">
-        <h3>Organic Beauty</h3>
-        <h1>Apple Cider Vinegar</h1>
-        <p>
-          Discover the beauty of nature with our handcrafted, organic products.
-          Find your perfect match for your skin type, skin care routine, and
-          personal style.
-        </p>
-        <button class="btn btn header-button">shop now</button>
+      <div class="header-content container-lg container-sm">
+        <div class="row mt-5">
+          <div class="col-lg-4 col-md-6 col-11 ms-auto">
+            <h3>Organic Beauty</h3>
+            <h1 class="text-white">Apple Cider Vinegar</h1>
+            <p class="text-white">
+              Discover the beauty of nature with our handcrafted, organic
+              products. Find your perfect match for your skin type, skin care
+              routine, and personal style.
+            </p>
+            <button class="btn btn header-button">shop now</button>
+          </div>
+        </div>
       </div>
     </header>
-    <div class="container">
-      <section class="deals">
+    <section class="deals">
+      <div class="container-md">
         <div class="title">
           <h1>OrganicBeauty Deals</h1>
           <hr />
@@ -87,11 +128,13 @@
             OrganicBeauty. Order all classy products today!
           </p>
         </div>
-        <div class="slider"></div>
-      </section>
-      <section class="special-services">
-        <div class="icons">
-          <div class="icon-item">
+        <div class="slider row"></div>
+      </div>
+    </section>
+    <section class="special-services">
+      <div class="container-sm">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
             <div class="item-img">
               <img src="imgs/icons/shipping.png" />
               <div class="icon-circle"></div>
@@ -102,7 +145,7 @@
               ex.
             </p>
           </div>
-          <div class="icon-item">
+          <div class="col-md-4 col-sm-12">
             <div class="item-img">
               <img src="imgs/icons/guarantee.png" />
               <div class="icon-circle"></div>
@@ -113,7 +156,7 @@
               ex.
             </p>
           </div>
-          <div class="icon-item">
+          <div class="col-md-4 col-sm-12">
             <div class="item-img">
               <img src="imgs/icons/Group.png" />
               <div class="icon-circle"></div>
@@ -125,32 +168,46 @@
             </p>
           </div>
         </div>
-      </section>
-      <section class="ad-section">
-        <div class="content">
-          <h1>TAKE CONTROL OF <br />YOUR HEALTH</h1>
-          <p>
-            The Good4Me range has been formulated based on scientific &
-            traditional evidence.
-          </p>
-          <p>
-            Our vitamins are here and ready to boost your mood, immunity and
-            overall well-being!
-          </p>
-          <p>Made in New Zealand from local and imported ingredients.</p>
-          <button class="btn btn-lg btn-outline-warning">
-            browse our range
-          </button>
-        </div>
-        <div class="images">
-          <div class="small-imgs">
-            <img src="imgs/ad (1).png" />
-            <img src="imgs/ad (2).png" />
+      </div>
+    </section>
+    <section class="ad-section">
+      <div class="container-md">
+        <div class="row">
+          <div class="content col-sm-5">
+            <h1>TAKE CONTROL OF <br />YOUR HEALTH</h1>
+            <p>
+              The Good4Me range has been formulated based on scientific &
+              traditional evidence.
+            </p>
+            <p>
+              Our vitamins are here and ready to boost your mood, immunity and
+              overall well-being!
+            </p>
+            <p>Made in New Zealand from local and imported ingredients.</p>
+            <div>
+              <button class="btn btn-lg btn-outline-warning w-auto w-lg-auto">
+                browse our range
+              </button>
+              <div class="w-50 d-none d-md-flex"></div>
+            </div>
           </div>
-          <img class="cover" src="imgs/ad (3).png" />
+          <div class="images d-none d-sm-flex col-sm-6 offset-sm-1">
+            <div class="row">
+              <div
+                class="d-none d-lg-flex justify-content-around flex-column col-lg-6"
+              >
+                <img src="imgs/ad (1).png" />
+                <img src="imgs/ad (2).png" />
+              </div>
+              <div class="col-lg-6">
+                <img class="cover" src="imgs/ad (3).png" />
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-      <section class="products">
+      </div>
+    </section>
+    <!-- <section class="products">
         <h1>our products are</h1>
         <div class="owl-carousel">
           <div class="owl-item product-item">
@@ -251,9 +308,8 @@
           </div>
         </div>
         <button class="btn btn-lg">view all products</button>
-      </section>
-    </div>
-    <section class="real-results">
+      </section> -->
+    <!-- <section class="real-results">
       <img src="imgs/slidershow2.png" />
       <div class="container">
         <div class="reviews">
@@ -440,10 +496,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="hashtag">
-      <h1>#OrganicBeauty</h1>
+    <section class="hashtag mb-1">
+      <h1 class="fs-1">#OrganicBeauty</h1>
 
       <div
         id="carouselExampleAutoplaying"
@@ -456,23 +512,18 @@
           type="button"
           data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="prev"
-        >
-          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span> -->
-        </button>
+        ></button>
         <button
           class="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="next"
         ></button>
-        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span> -->
       </div>
     </section>
     <footer class="footer">
       <div class="d-flex container">
-        <h1>Organic Beauty</h1>
+        <h1 class="fs-1">Organic Beauty</h1>
         <div class="d-flex socials">
           <a
             href="https://www.facebook.com/profile.php?id=61561547084127"
@@ -489,10 +540,9 @@
             <img class="social-icon" src="imgs/social_media/yt.png"
           /></a>
         </div>
-        <img
-          class="rounded-5 mx-auto d-block border border-warning border-5 logo"
-          src="imgs/organic beauty post.png"
-        />
+        <div class="bg-white rounded-5 border border-warning border-5">
+          <img class="rounded-5 logo p-3" src="imgs/organic beauty post.png" />
+        </div>
       </div>
     </footer>
 

@@ -1,6 +1,7 @@
 :root {
   --mainColor: #f6623e;
   --secondaryColor: #454545;
+  --mainLightColor: #a42b10;
 }
 
 * {
@@ -76,6 +77,10 @@
   left: 0;
 }
 
+.header-slider img {
+  width: 100%;
+}
+
 .header-content h3,
 .header-content h1 {
   margin-bottom: 5px;
@@ -119,6 +124,7 @@
 .title h1 {
   margin-bottom: 20px;
   font-size: 40px;
+  color: var(--mainColor);
 }
 
 .title hr {
@@ -151,6 +157,12 @@
   cursor: pointer;
 }
 
+body.bg-dark .deals .card:hover {
+  transform: scale(1.05);
+  border: 2px solid var(--mainLightColor);
+  cursor: pointer;
+}
+
 .slider div img {
   width: 100%;
   height: auto;
@@ -171,7 +183,7 @@
 }
 
 .icon-p {
-  color: #828181;
+  /* color: #828181; */
   font-size: 16px;
 }
 
@@ -291,6 +303,9 @@
 .real-results {
   background-color: #fef0e7;
   margin-bottom: 150px;
+}
+.real-results-dark {
+  background-color: #fef0e71d !important;
 }
 
 .reviews .card-body {
@@ -431,6 +446,7 @@
 }
 
 .owl-buttons div {
+  color: var(--mainColor);
   border: 2px solid var(--mainColor);
   padding: 5px 10px;
   border-radius: 5px;

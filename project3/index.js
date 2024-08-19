@@ -128,6 +128,49 @@ const previewDeal = async () => {
   });
 };
 
+let light_theme = true;
+const toggleTheme = () => {
+  const body = document.querySelector("body");
+  const nav = document.querySelector(".navbar");
+  const light = document.querySelector(".themes .light");
+  const dark = document.querySelector(".themes .dark");
+  const real_results = document.querySelector(".real-results");
+
+  light.addEventListener("click", (event) => {
+    light.classList.add("d-none");
+    dark.classList.remove("d-none");
+
+    body.classList.remove("bg-dark");
+    body.classList.remove("text-white");
+
+    nav.classList.remove("bg-dark");
+    nav.classList.remove("navbar-dark");
+    nav.classList.add("bg-light");
+    nav.classList.add("navbar-light");
+
+    real_results.classList.remove("real-results-dark");
+  });
+
+  dark.addEventListener("click", (event) => {
+    dark.classList.add("d-none");
+    light.classList.remove("d-none");
+
+    body.classList.add("bg-dark");
+    body.classList.add("text-white");
+
+    nav.classList.add("bg-dark");
+    nav.classList.add("navbar-dark");
+    nav.classList.remove("bg-light");
+    nav.classList.remove("navbar-light");
+
+    real_results.classList.add("real-results-dark");
+  });
+
+  if (light_theme) {
+  } else {
+  }
+};
+
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     items: 4, // Number of items to display
@@ -142,3 +185,4 @@ $(document).ready(function () {
 });
 
 previewDeal();
+toggleTheme();

@@ -135,6 +135,8 @@ const toggleTheme = () => {
   const light = document.querySelector(".themes .light");
   const dark = document.querySelector(".themes .dark");
   const real_results = document.querySelector(".real-results");
+  const real_result_img = document.querySelector(".real-results .upper-img");
+  const header_slider_image = document.querySelector(".header .header-slider");
 
   light.addEventListener("click", (event) => {
     light.classList.add("d-none");
@@ -149,6 +151,9 @@ const toggleTheme = () => {
     nav.classList.add("navbar-light");
 
     real_results.classList.remove("real-results-dark");
+
+    real_result_img.src = "imgs/slidershow2.png";
+    header_slider_image.src = "imgs/slidershow.png";
   });
 
   dark.addEventListener("click", (event) => {
@@ -164,6 +169,9 @@ const toggleTheme = () => {
     nav.classList.remove("navbar-light");
 
     real_results.classList.add("real-results-dark");
+
+    real_result_img.src = "imgs/slidershow2-dark.png";
+    header_slider_image.src = "imgs/slidershow-dark.png";
   });
 
   if (light_theme) {

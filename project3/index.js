@@ -95,8 +95,6 @@ const start = function () {
   }, 500);
 };
 
-start();
-
 document.querySelector(".overlay").classList.add("d-none");
 document.querySelector(".preview-deal").classList.add("d-none");
 
@@ -128,7 +126,6 @@ const previewDeal = async () => {
   });
 };
 
-let light_theme = true;
 const toggleTheme = () => {
   const body = document.querySelector("body");
   const nav = document.querySelector(".navbar");
@@ -173,10 +170,6 @@ const toggleTheme = () => {
     real_result_img.src = "imgs/slidershow2-dark.png";
     header_slider_image.src = "imgs/slidershow-dark.png";
   });
-
-  if (light_theme) {
-  } else {
-  }
 };
 
 $(document).ready(function () {
@@ -192,5 +185,6 @@ $(document).ready(function () {
   });
 });
 
+start();
 previewDeal();
 toggleTheme();
